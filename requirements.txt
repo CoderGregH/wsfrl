@@ -1,0 +1,7 @@
+jupyterlab
+matplotlib
+numpy
+plotly
+polars[all]
+scikit-learn
+xgboost
