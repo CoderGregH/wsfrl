@@ -5,3 +5,6 @@ plotly
 polars[all]
 scikit-learn
 xgboost
+marimo
+pandas
+IPython
