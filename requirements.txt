@@ -8,3 +8,4 @@ xgboost
 marimo
 pandas
 IPython
+StrEnum

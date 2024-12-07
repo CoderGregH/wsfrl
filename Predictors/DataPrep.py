@@ -1,5 +1,5 @@
 import polars as pl
-import pandas as pd
+
 
 def get_data():
     results_with_pb_df: pl.DataFrame = pl.read_csv("../../data/withpb_and_age-all-results.csv")
