@@ -2,7 +2,7 @@ import polars as pl
 import pandas as pd
 
 def get_data():
-    results_with_pb_df: pl.DataFrame = pl.read_csv("data/withpb_and_age-all-results.csv")
+    results_with_pb_df: pl.DataFrame = pl.read_csv("../../data/withpb_and_age-all-results.csv")
 
     results_with_pb_df = results_with_pb_df.drop("XC_Count_of_event", "XC_Position_Min", "XC_Position_Max",
                                                  "XC_Min_Age", "XC_Max_Age", "exists", "from_file")
