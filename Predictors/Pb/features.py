@@ -1,4 +1,6 @@
 import pandas as pd
+from IPython.core.display_functions import display
+
 
 def validate_features_vs_target(df_features : pd.DataFrame, df_target : pd.DataFrame):
 
@@ -26,6 +28,23 @@ def general_feature_validation(features_df,feature_columns_to_validate):
     else:
         print(
             f"{good_prefix} - All feature columns {len(feature_columns_to_validate)} exist in the DataFrame {len(features_df.columns)}.")
+
+
+def report_features_with_isnan(features_df: pd.DataFrame):
+    # Create a DataFrame with the count of NaN values for each column
+    nan_counts_df = pd.DataFrame({
+        'column': features_df.columns,
+        'nan_count': features_df.isna().sum()
+    })
+
+    # Sort the DataFrame by nan_count in descending order
+    nan_counts_df = nan_counts_df.sort_values(by='nan_count', ascending=False)
+    nan_counts_df = nan_counts_df[nan_counts_df['nan_count'] > 0]
+
+    # Set the maximum number of rows to display
+    pd.set_option('display.max_rows', 30)
+
+    display(nan_counts_df.head(8))
 
 
 def get_boolean_features(df: pd.DataFrame, prefix: str) -> list:

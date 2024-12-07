@@ -14,9 +14,6 @@ class WsfrlColumnOverall(StrEnum):
     Points = auto()
 
 class WsfrlColumnForPowerOfTen(StrEnum):
-    AgeCategoryTrack = 'p_of_10_track_age_category',
-    AgeCateoryRoad ='p_of_10_road_age_category',
-    AgeCateoryXc ='p_of_10_xc_age_category',
     PowerOfTenClub = 'p_of_10_club',
     PowerOfTenGender = 'p_of_10_gender',
     AthleteId ='p_of_10_athlete_id',
