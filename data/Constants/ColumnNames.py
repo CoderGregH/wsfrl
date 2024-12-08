@@ -37,6 +37,7 @@ class WsfrlColumnForAges(StrEnum):
 
 class WsfrlColumnForAgesGenerated(StrEnum):
     BlendedAgeCategory = 'blended_age_category'
+    BlendedAgeCategoryPlus = 'blended_age_category_plus'
 
 class WsfrlColumnPriorStats(StrEnum):
     ClubMates = 'fellow_club_mates_running'
