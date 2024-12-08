@@ -21,6 +21,9 @@ class WsfrlColumnForPowerOfTen(StrEnum):
     MatchCount = 'matches',
     MatchUsingParameters ='parameters_used',
 
+
+
+
 class WsfrlColumnForAges(StrEnum):
     AgeCategoryTrack = 'p_of_10_track_age_category',
     AgeCategoryRoad ='p_of_10_road_age_category',
@@ -31,6 +34,9 @@ class WsfrlColumnForAges(StrEnum):
     DobMin ='min_dob',
     DobMax ='max_dob',
     DobAvg ='avg_dob'
+
+class WsfrlColumnForAgesGenerated(StrEnum):
+    BlendedAgeCategory = 'blended_age_category'
 
 class WsfrlColumnPriorStats(StrEnum):
     ClubMates = 'fellow_club_mates_running'
