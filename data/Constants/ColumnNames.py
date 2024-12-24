@@ -12,6 +12,8 @@ class WsfrlColumnOverall(StrEnum):
     GenderPosition = "Gender Position"
     Club = auto()
     Points = auto()
+    IsClubMember = "is_club_member"
+    IsBigClub = "is_big_club"
 
 class WsfrlColumnForPowerOfTen(StrEnum):
     PowerOfTenClub = 'p_of_10_club',
@@ -59,4 +61,6 @@ class WsfrlColumnPriorStats(StrEnum):
     PointsBestYtd = 'best_points_year_to_date'
     PointsAverageYtd = 'average_points_year_to_date'
     PointsWorstYtd = 'worst_points_year_to_date'
+
+
 
