@@ -11,9 +11,17 @@ class WsfrlColumnOverall(StrEnum):
     Gender = auto()
     GenderPosition = "Gender Position"
     Club = auto()
+    ClubPosition = "club_position"
+    ClubPositionGender = "club_position_gender"
     Points = auto()
+
+
+class WsfrlColumnCalculated(StrEnum):
     IsClubMember = "is_club_member"
     IsBigClub = "is_big_club"
+    IsPBClub = "is_pb"
+    IsFirstTimeRun = "first_time_run"
+    PriorVsRun = "prior_time_vs_current_change"
 
 class WsfrlColumnForPowerOfTen(StrEnum):
     PowerOfTenClub = 'p_of_10_club',
@@ -41,7 +49,19 @@ class WsfrlColumnForAgesGenerated(StrEnum):
     BlendedAgeCategory = 'blended_age_category'
     BlendedAgeCategoryPlus = 'blended_age_category_plus'
 
+class WsfrlColumnPriorStatsTimes(StrEnum):
+    PriorQuickestRunTime = 'prior_quickest_run_time'
+    PriorTimeVsRunRime = 'prior_time_vs_current_time'
+
+
+
 class WsfrlColumnPriorStats(StrEnum):
+    PriorRunAttempt = 'prior_run_attempts'
+    PriorQuickestRunInYear = 'prior_quickest_run_in_year'
+    PriorQuickestRunPosition = 'prior_quickest_run_position'
+    PriorCoursePbs = 'prior_course_pbs'
+    PriorQuickestRunInSeconds =  'prior_quickest_run_time_in_seconds'
+    PriorQuickestRunVsRunTimeInSeconds = 'prior_quickest_vs_run_time'
     ClubMates = 'fellow_club_mates_running'
     ClubMatesMale = 'fellow_club_mates_running_male'
     ClubMatesFemale = 'fellow_club_mates_running_female'
